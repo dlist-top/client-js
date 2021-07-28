@@ -56,7 +56,7 @@ export class Client extends EventEmitter {
                     this.logger.debug(`Disconnected with reason ${payload.data} - Reconnecting in ${RECONNECT_TIMEOUT}ms...`);
                     this.emit('disconnect', payload.data, RECONNECT_TIMEOUT);
                     delete this.entity;
-                    if(payload.data === 'The given token is invalid..') {
+                    if(payload.data === 'The given token is invalid.') {
                         this.logger.debug(`Invalid token was provided, client won't be reconnecting.`);
                         break;
                     }
