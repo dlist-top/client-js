@@ -1,0 +1,6 @@
+src/
+tests/
+tsconfig.json
+.idea/
+.eslintrc.yaml
+.github
